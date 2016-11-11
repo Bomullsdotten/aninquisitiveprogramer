@@ -1,18 +1,20 @@
+import datetime
 from sqlalchemy import (
     Column,
-    Index,
     Integer,
-    Text,
-)
+    Unicode,
+    UnicodeText,
+    DateTime
+    )
 
 from .meta import Base
 
 
-class MyModel(Base):
-    __tablename__ = 'models'
+class User(Base):
+    __tablename__ = 'user'
     id = Column(Integer, primary_key=True)
-    name = Column(Text)
-    value = Column(Integer)
+    name = Column(Unicode(255), unique=True, nullable=False)
+    password = Column(Unicode(255), nullable=False)
+    last_logged = Column(DateTime, default=datetime.datetime.utcnow)
 
 
-Index('my_index', MyModel.name, unique=True, mysql_length=255)
