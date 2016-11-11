@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d1c78a1-e34c-431d-87c0-b604d8b94422" name="Default" comment="" />
+    <list default="true" id="7d1c78a1-e34c-431d-87c0-b604d8b94422" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Blog/.coveragerc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Blog/CHANGES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Blog/MANIFEST.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Blog/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Blog/blog/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Blog/blog/static/pyramid-16x16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Blog/blog/static/pyramid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Blog/blog/static/theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Blog/blog/templates/mytemplate.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Blog/blog/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Blog/blog/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Blog/development.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Blog/production.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Blog/pytest.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Blog/setup.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="aninquisitiveprogrammer.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -33,6 +51,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -59,6 +80,7 @@
         <option value="$PROJECT_DIR$/Blog/blog/templates/register.jinja2" />
         <option value="$PROJECT_DIR$/Blog/setup.py" />
         <option value="$PROJECT_DIR$/Blog/blog/models/user.py" />
+        <option value="$PROJECT_DIR$/Blog/development.ini" />
       </list>
     </option>
   </component>
@@ -74,7 +96,7 @@
     <option name="width" value="1320" />
     <option name="height" value="784" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -116,20 +138,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="aninquisitiveprogrammer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aninquisitiveprogrammer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aninquisitiveprogrammer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="env" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -481,7 +489,6 @@
     <entry file="file://$PROJECT_DIR$/Blog/blog/templates/view_blog.jinja2" />
     <entry file="file://$PROJECT_DIR$/Blog/blog/models/blog_post.py" />
     <entry file="file://$PROJECT_DIR$/Blog/blog/views/blog.py" />
-    <entry file="file://$PROJECT_DIR$/Blog/blog/__init__.py" />
     <entry file="file://$PROJECT_DIR$/Blog/blog/services/user.py" />
     <entry file="file://$PROJECT_DIR$/Blog/blog/templates/layout.jinja2" />
     <entry file="file://$PROJECT_DIR$/Blog/test.py" />
@@ -506,8 +513,89 @@
     <entry file="file://$PROJECT_DIR$/Blog/blog/views/default.py" />
     <entry file="file://$PROJECT_DIR$/Blog/blog/templates/index.jinja2" />
     <entry file="file://$PROJECT_DIR$/Blog/blog/templates/register.jinja2" />
-    <entry file="file://$PROJECT_DIR$/Blog/setup.py" />
     <entry file="file://$PROJECT_DIR$/Blog/blog/models/user.py" />
     <entry file="file://$PROJECT_DIR$/Blog/blog/forms.py" />
+    <entry file="file://$PROJECT_DIR$/Blog/pytest.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/production.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-241">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/development.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/blog/templates/mytemplate.pt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/blog/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/blog/static/pyramid-16x16.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/blog/static/pyramid.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/blog/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
