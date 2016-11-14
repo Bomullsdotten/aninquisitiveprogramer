@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d1c78a1-e34c-431d-87c0-b604d8b94422" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog/blog/__init__.py" afterPath="$PROJECT_DIR$/Blog/blog/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog/blog/models/user.py" afterPath="$PROJECT_DIR$/Blog/blog/models/user.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog/blog/routes.py" afterPath="$PROJECT_DIR$/Blog/blog/routes.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog/blog/scripts/initializedb.py" afterPath="$PROJECT_DIR$/Blog/blog/scripts/initializedb.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog/blog/security.py" afterPath="$PROJECT_DIR$/Blog/blog/security.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog/blog/templates/index.jinja2" afterPath="$PROJECT_DIR$/Blog/blog/templates/index.jinja2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog/blog/views/default.py" afterPath="$PROJECT_DIR$/Blog/blog/views/default.py" />
     </list>
     <ignored path="aninquisitiveprogrammer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +30,8 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Blog/blog/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -133,12 +126,12 @@
         <option value="$PROJECT_DIR$/Blog/development.ini" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Blog/blog/security.py" />
-        <option value="$PROJECT_DIR$/Blog/blog/__init__.py" />
         <option value="$PROJECT_DIR$/Blog/blog/models/user.py" />
         <option value="$PROJECT_DIR$/Blog/blog/scripts/initializedb.py" />
         <option value="$PROJECT_DIR$/Blog/blog/views/default.py" />
         <option value="$PROJECT_DIR$/Blog/blog/templates/index.jinja2" />
         <option value="$PROJECT_DIR$/Blog/blog/routes.py" />
+        <option value="$PROJECT_DIR$/Blog/blog/__init__.py" />
       </list>
     </option>
   </component>
@@ -932,8 +925,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Blog/blog/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
