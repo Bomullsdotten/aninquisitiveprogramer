@@ -41,5 +41,6 @@ def main(argv=sys.argv):
     with transaction.manager:
         dbsession = get_tm_session(session_factory, transaction.manager)
 
-        model = User(name=u'admin', password=hash_password(u'admin'))
-        dbsession.add(model)
+        admin_user = User(name=u'admin', role='admin')
+        admin_user.set_password(u'admin')
+        dbsession.add(admin_user)

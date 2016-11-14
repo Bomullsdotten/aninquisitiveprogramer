@@ -8,11 +8,4 @@ def hash_password(pwd):
 def check_password(pwd, expected_hash):
     return pwd_context.verify(pwd, expected_hash)
 
-USERS = {'admin': hash_password('admin')}
 
-GROUPS = {'admin': ['group:editors']}
-
-
-def groupfinder(userid, request):
-    if userid in USERS:
-        return GROUPS.get(userid, [])

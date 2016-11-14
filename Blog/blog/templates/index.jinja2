@@ -4,9 +4,9 @@
 
 {% if request.authenticated_userid %}
 Welcome <strong>{{ recuest.authenticated_userid }}</strong> ::
-<a href="{{ request.route_url('auth', action='out') }}">Sign out</a>
+<a href="{{ request.route_url('logout', action='out') }}">Sign out</a>
 {% else %}
-<form action="{{ request.route_url('auth', action='in') }}" method="post" class="form-inline">
+<form action="{{ request.route_url('login', action='in') }}" method="post" class="form-inline">
     <div class="form-group">
         <input type="text" name="username" class="form-control", placeholder="Username">
     </div>
