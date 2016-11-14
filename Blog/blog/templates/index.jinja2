@@ -2,21 +2,6 @@
 
 {% block content %}
 
-{% if request.authenticated_userid %}
-Welcome <strong>{{ recuest.authenticated_userid }}</strong> ::
-<a href="{{ request.route_url('logout', action='out') }}">Sign out</a>
-{% else %}
-<form action="{{ request.route_url('login', action='in') }}" method="post" class="form-inline">
-    <div class="form-group">
-        <input type="text" name="username" class="form-control", placeholder="Username">
-    </div>
-    <div class="form-group">
-        <input type="password" name="password", class="form-control", placeholder="Password">
-    </div>
-    <div class="form-group">
-        <input type="submit" value="Sign in" class="btn btn-default">
-    </div>
-</form>
-{% endif %}
+<p>start simple</p>
 
 {% endblock %}
