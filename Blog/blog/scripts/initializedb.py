@@ -16,7 +16,7 @@ from ..models import (
     get_tm_session,
     )
 from ..models import User
-
+from ..security import hash_password
 
 def usage(argv):
     cmd = os.path.basename(argv[0])
@@ -41,5 +41,5 @@ def main(argv=sys.argv):
     with transaction.manager:
         dbsession = get_tm_session(session_factory, transaction.manager)
 
-        model = User(name=u'admin', password=u'admin')
+        model = User(name=u'admin', password=hash_password(u'admin'))
         dbsession.add(model)
