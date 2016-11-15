@@ -38,7 +38,7 @@ def logout(request):
     return {}
 
 
-@view_config(renderer_name='blog', renderer='blog:templates/view_blog.jinja2')
+@view_config(route_name='blog', renderer='blog:templates/view_blog.jinja2')
 def view_blog(request):
     return {}
 
