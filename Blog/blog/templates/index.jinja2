@@ -1,7 +1,25 @@
 {% extends 'layout.jinja2' %}
 
 {% block content %}
+{% if paginator.items %}
+    <h2>Blog posts</h2>
 
-<p>start simple</p>
-
+    <ul>
+        {% for post in paginator.items %}
+            <li>
+                <a href="{{ request.route_url('blog', id=entry.id, slug=entry.slug) }}">
+                    {{ entry.title }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    {{ paginator.pager() |safe }}
+{% else %}
+    <p>Sorry we could not find anny blog posts.</p>
+{% endif %}
+<p>
+<a href="{{ request.route_url('blog_action', action='create') }}">
+    Create a new post
+</a>
+</p>
 {% endblock %}

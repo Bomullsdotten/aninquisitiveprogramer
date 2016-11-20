@@ -14,7 +14,7 @@ class BlogPostService(object):
         return query.get(_id)
 
     @classmethod
-    def paginator(cls, request, page=1):
+    def get_paginator(cls, request, page=1):
         query = request.dbsession.query(BlogPost)
         query = query.order_by(sqlalchemy.desc(BlogPost.created))
         query_params = request.GET.mixed()
