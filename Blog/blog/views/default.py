@@ -5,10 +5,12 @@ from pyramid.httpexceptions import (
 )
 
 from ..models import User, BlogPost
-
+from ..actions.blog_post import BlogPostService
 
 @view_config(route_name='home', renderer='blog:templates/index.jinja2')
 def home(request):
+    page = int(request.params.get('page', 1))
+    paginator = BlogPostService
     return dict(
         title='Home',
         project='Blog'
