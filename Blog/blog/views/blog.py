@@ -11,11 +11,11 @@ from ..actions.blog_post import BlogPostService
              renderer='blog:templates/view_blog.jinja2')
 def view_blog(request):
     blog_id = int(request.matchdict.get('id', -1))
-    entry = BlogPostService.by_id(blog_id, request)
+    post = BlogPostService.by_id(blog_id, request)
 
-    if not entry:
+    if not post:
         return HTTPNotFound()
     return dict(
-        entry=entry
+        post=post
     )
 
