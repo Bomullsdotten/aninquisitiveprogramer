@@ -8,6 +8,8 @@ from sqlalchemy import (
     )
 
 from .meta import Base
+from webhelpers2.text import urlify
+from webhelpers2.date import distance_of_time_in_words
 
 
 class BlogPost(Base):
@@ -18,4 +20,7 @@ class BlogPost(Base):
     created = Column(DateTime, default=datetime.datetime.utcnow)
     edited = Column(DateTime, default=datetime.datetime.utcnow)
 
+    @property
+    def slug(self):
+        return urlify(self.title)
 
