@@ -39,8 +39,3 @@ def login(request):
 def logout(request):
     return {}
 
-
-@view_config(route_name='blog', renderer='blog:templates/view_blog.jinja2')
-def view_blog(request):
-    return {}
-
