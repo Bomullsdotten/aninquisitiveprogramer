@@ -18,7 +18,10 @@ requires = [
     'zope.sqlalchemy',
     'waitress',
     'passlib',
-    'webhelpers2'
+    'webhelpers2',
+    'paginate',
+    'paginate_sqlalchemy',
+
     ]
 
 tests_require = [
