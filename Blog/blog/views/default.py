@@ -7,6 +7,7 @@ from pyramid.httpexceptions import (
 from ..models import User, BlogPost
 from ..actions.blog_post import BlogPostService
 
+
 @view_config(route_name='home', renderer='blog:templates/index.jinja2')
 def home(request):
     page = int(request.params.get('page', 1))
@@ -15,18 +16,6 @@ def home(request):
         title='Home',
         paginator=paginator
     )
-
-
-@view_config(route_name='blog_action', match_param='action=edit',
-             renderer='blog:templates/edit_blog.jinja2')
-def blog_update(request):
-    return {}
-
-
-@view_config(route_name='blog_action', match_param='action=create',
-             renderer='blog:templates/edit_blog.jinja2')
-def blog_create(request):
-    return {}
 
 
 @view_config(route_name='login', renderer='blog:templates/login.jinja2',

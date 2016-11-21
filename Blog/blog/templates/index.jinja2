@@ -5,10 +5,10 @@
     <h2>Blog posts</h2>
 
     <ul>
-        {% for post in paginator.items %}
+        {% for blog_post in paginator.items %}
             <li>
-                <a href="{{ request.route_url('blog', id=entry.id, slug=entry.slug) }}">
-                    {{ entry.title }}
+                <a href="{{ request.route_url('blog', id=blog_post.id, slug=blog_post.slug) }}">
+                    {{ blog_post.title }}
                 </a>
             </li>
         {% endfor %}

@@ -21,6 +21,7 @@ requires = [
     'webhelpers2',
     'paginate',
     'paginate_sqlalchemy',
+    'wtforms'
 
     ]
 
