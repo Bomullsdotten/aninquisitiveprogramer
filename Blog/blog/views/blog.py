@@ -10,7 +10,8 @@ from ..forms import BlogUpdateForm
 
 
 @view_config(route_name='blog_action', match_param='action=create',
-             renderer='blog:templates/edit_blog.jinja2')
+             renderer='blog:templates/edit_blog.jinja2',
+             permission='create')
 def blog_create(request):
     entry = BlogPost()
     form = BlogCreateForm(request.POST)
@@ -26,7 +27,8 @@ def blog_create(request):
 
 
 @view_config(route_name='blog_action', match_param='action=edit',
-             renderer='blog:templates/edit_blog.jinja2')
+             renderer='blog:templates/edit_blog.jinja2',
+             permission='edit')
 def blog_update(request):
     blog_id = int(request.params.get('id', -1))
     blog_post = BlogPostService.by_id(blog_id, request)
@@ -53,7 +55,7 @@ def view_blog(request):
     if not post:
         return HTTPNotFound()
     return dict(
-        post=post
+        blog_post=post
     )
 
 def validate_form_request(request, form):

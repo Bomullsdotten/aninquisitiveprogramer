@@ -16,7 +16,7 @@ from ..models import (
     get_tm_session,
     )
 from ..models import User
-from ..security import hash_password
+
 
 def usage(argv):
     cmd = os.path.basename(argv[0])

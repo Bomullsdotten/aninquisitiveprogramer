@@ -5,7 +5,11 @@ from pyramid.authorization import ACLAuthorizationPolicy
 def main(global_config, **settings):
     """ This function returns a Pyramid WSGI application.
     """
-    config = Configurator(settings=settings)
+    authentication_policy = AuthTktAuthenticationPolicy("shh, it's a secret")
+    authorization_policy = ACLAuthorizationPolicy()
+    config = Configurator(settings=settings,
+                          authentication_policy=authentication_policy,
+                          authorization_policy=authorization_policy)
     config.include('pyramid_jinja2')
     config.include('.models')
     config.include('.routes')

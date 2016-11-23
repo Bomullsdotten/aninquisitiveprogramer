@@ -1,11 +1,11 @@
-from passlib.apps import custom_app_context as pwd_context
+from pyramid.security import Allow, Everyone, Authenticated
 
 
-def hash_password(pwd):
-    return pwd_context.encrypt(pwd, category='admin')
+class BlogPostFactory(object):
+    __acl__ = [(Allow, Everyone, 'view'),
+               (Allow, Authenticated, 'create'),
+               (Allow, Authenticated, 'edit'),
+               ]
 
-
-def check_password(pwd, expected_hash):
-    return pwd_context.verify(pwd, expected_hash)
-
-
+    def __init__(self, request):
+        pass

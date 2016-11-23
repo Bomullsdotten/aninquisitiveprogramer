@@ -1,0 +1,15 @@
+{% extends 'blog:templates/layot.jinja2' %}
+
+{% block content %}
+    <h1>{{ blog_plost.title }}</h1>
+    <hr/>
+    <p>{{ blog_post.body }}</p>
+    <hr/>
+    <p>Created <strong title="{{ blog_post.created }}">
+        {{ blog_post.created }}</strong></p>
+
+    <p><a href="{{ request.route_url('home') }}">Go Back</a> ::
+        <a href="{{ request.route_url('blog_action', action='edit',
+                _query={'id': blog_post.id}}">Edit entry</a>
+    </p>
+{% endblock %}
