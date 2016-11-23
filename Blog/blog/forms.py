@@ -12,5 +12,5 @@ class BlogCreateForm(wtf.Form):
 
 
 class BlogUpdateForm(BlogCreateForm):
-    id = wtf.HiddenField
+    id = wtf.HiddenField()
 
