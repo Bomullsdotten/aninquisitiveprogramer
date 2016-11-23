@@ -1,0 +1,17 @@
+{% extends "blog:templates/layout.jinja2" %}
+
+{% block content %}
+
+<form action="{{ request.route_url('login') }}" method="post" class="form-inline">
+    <div class="form-group">
+        <input type="text" name="username" class="form-control" placeholder="Username">
+    </div>
+    <div class="form-group">
+        <input type="password" name="password" class="form-control" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Sign in" class="btn btn-default">
+    </div>
+</form>
+
+{% endblock %}

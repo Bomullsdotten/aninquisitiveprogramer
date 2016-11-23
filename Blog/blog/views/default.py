@@ -19,7 +19,7 @@ def home(request):
 
 
 @view_config(route_name='login', renderer='blog:templates/login.jinja2',
-             request_method='POST')
+             request_method=['GET', 'POST'])
 def login(request):
     return {}
 
