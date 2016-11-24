@@ -8,8 +8,11 @@
     <p>Created <strong title="{{ blog_post.created }}">
         {{ blog_post.created }}</strong></p>
 
-    <p><a href="{{ request.route_url('home') }}">Go Back</a> ::
-        <a href="{{ request.route_url('blog_action', action='edit',
+    <p><a href="{{ request.route_url('home') }}">Go Back</a>
+
+    {% if request.authenticated_userid %}
+        :: <a href="{{ request.route_url('blog_action', action='edit',
                 _query={'id': blog_post.id}) }}">Edit entry</a>
+    {% endif %}
     </p>
 {% endblock %}
