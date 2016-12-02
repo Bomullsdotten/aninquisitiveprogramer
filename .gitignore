@@ -93,3 +93,9 @@ ENV/
 /Blog/Blog.sqlite
 
 .idea
+
+# Ini files
+production.ini
+
+#setup files
+initializedb.py
