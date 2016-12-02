@@ -95,7 +95,7 @@ ENV/
 .idea
 
 # Ini files
-/production.ini
+production.ini
 
 #setup files
-/initializedb.py
+initializedb.py
