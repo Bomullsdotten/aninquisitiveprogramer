@@ -5,7 +5,7 @@ from pyramid.authorization import ACLAuthorizationPolicy
 def main(global_config, **settings):
     """ This function returns a Pyramid WSGI application.
     """
-    authentication_policy = AuthTktAuthenticationPolicy("shh, it's a secret")
+    authentication_policy = AuthTktAuthenticationPolicy(settings['secret'], hashalg = 'sha512')
     authorization_policy = ACLAuthorizationPolicy()
     config = Configurator(settings=settings,
                           authentication_policy=authentication_policy,
