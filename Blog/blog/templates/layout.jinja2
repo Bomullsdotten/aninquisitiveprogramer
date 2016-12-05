@@ -7,8 +7,12 @@
     <meta name="description" content="pyramid web application">
     <meta name="author" content="Pylons Project">
     <link rel="shortcut icon" href="{{request.static_url('blog:static/pyramid-16x16.png')}}">
-
+    {% if title %}
+      <title>{{ title }} - AIP</title>
     <title>Alchemy Scaffold for The Pyramid Web Framework</title>
+      {% else %}
+      <title>AIP</title>
+      {% endif %}
 
     <!-- Bootstrap core CSS -->
     <link href="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">

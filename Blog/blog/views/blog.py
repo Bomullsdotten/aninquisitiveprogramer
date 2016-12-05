@@ -22,7 +22,8 @@ def blog_create(request):
 
     return dict(
         form=form,
-        action=request.matchdict.get('action')
+        action=request.matchdict.get('action'),
+        title='New Post'
     )
 
 
@@ -41,7 +42,8 @@ def blog_update(request):
 
     return dict(
         form=form,
-        action=request.matchdict.get('action')
+        action=request.matchdict.get('action'),
+        title="Update"
     )
 
 
@@ -55,7 +57,8 @@ def view_blog(request):
     if not post:
         return HTTPNotFound()
     return dict(
-        blog_post=post
+        blog_post=post,
+        title=post.title
     )
 
 def validate_form_request(request, form):

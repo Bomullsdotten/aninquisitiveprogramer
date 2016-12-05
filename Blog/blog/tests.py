@@ -38,6 +38,8 @@ class BaseTest(unittest.TestCase):
         transaction.abort()
         Base.metadata.drop_all(self.engine)
 
+    def test_test(self):
+        self.assertEqual()
 
 class TestMyViewSuccessCondition(BaseTest):
 
