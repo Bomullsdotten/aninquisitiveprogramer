@@ -3,7 +3,7 @@
 {% block content %}
     <h1>{{ blog_post.title }}</h1>
     <hr/>
-    <p>{{ blog_post.body }}</p>
+    <p>{{ blog_post.body |safe}}</p>
     <hr/>
     <p>Created <strong title="{{ blog_post.created }}">
         {{ blog_post.created }}</strong></p>
